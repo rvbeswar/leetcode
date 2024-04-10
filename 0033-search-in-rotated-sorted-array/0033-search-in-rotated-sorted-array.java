@@ -9,6 +9,8 @@ class Solution {
                 return mid;
             }
             // left sorted array
+            //if mid > than Low, everything left of mid is sorted
+            //if mid < than Low, everything right of mid is sorted
             else if (nums[low] <= nums[mid]) {
                 if (nums[mid] < target || nums[low] > target)
                     low = mid + 1;
